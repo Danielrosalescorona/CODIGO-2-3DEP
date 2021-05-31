@@ -34,7 +34,7 @@ scanf("%d,&monto");
 banco= banco+monto;//acumulador//
 numdepositos = numdepositos +1;//contador//
 
-printf("¿quieres realizar otro deposito? (s/n)");
+printf("¿quieres realizar otro deposito? (s/n)?");
 scanf("%s,&respuesta")
 
 } while (respuesta "s");// condition while = mientras //
