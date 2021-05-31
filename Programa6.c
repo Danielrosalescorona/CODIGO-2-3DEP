@@ -42,5 +42,4 @@ int main[]
     printf("\n\n dinero que tienes en el banco &f, banco");
     printf("\n\n numero de depositos &d, numdepositos");
     return 0;
-
 ]
