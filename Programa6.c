@@ -1,7 +1,7 @@
 //+Dep3_prog6basico+//
 // dinos Numero de veces que ahorras y nos digas lo acumulados de ahorro//
 
-#incluide <studio.h>
+#incluide <stdio.h>
 
 int main[]
 [
@@ -27,7 +27,6 @@ respuesta = "s"
 
 do
 {
-
 //voy al banco//
 letra = "s"
 printf("\n\n monto a depositar");
