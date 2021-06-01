@@ -1,45 +1,44 @@
-//+Dep3_prog6basico+//
-// dinos Numero de veces que ahorras y nos digas lo acumulados de ahorro//
 
-#incluide <stdio.h>
-
-int main[]
-[
-     int banco; //acomular//
-     int monto; //monto de ahorrar por evento//
-     int numdepositos; //cantidad de veces que fui al banco//
-     char letra; //saber si queremos realizar otro desposito//
-
+/*Dep3_Prog6:
+Un cuente el numero de veces que ahorras y nos diga el acumulado de ahorro*/
+#include <stdio.h>
+int main()
+{
+    int banco; //acumular
+    int monto; // monto o cantidad a ahorrar por evento//
+    int numdepositos; // la cantidad de veces que fui al banco//
+    char respuesta; // Es para saber si queremos realizar otro depósito//
 
     //voy al banco//
     printf("\n\n monto a depositar");
     scanf("%d,&monto");
     banco= banco+monto;//acumulador//
     numdepositos = numdepositos +1;//contador//
-
+    
     printf("\n\n dinero que tienes en el banco &f, banco");
     printf("\n\n numero de depositos &d, numdepositos");
 
-    banco = 0;
-    monto = 0;
-    numdepositos = 0; 
-    respuesta = "s"
+    numdepositos=0;
+    banco=0;
+    monto=0;
+    respuesta="s"
 
     do
     {
-       //voy al banco//
-       respuesta = "s"
-       printf("\n\n monto a depositar");
-       scanf("%d,&monto");
-       banco= banco+monto;//acumulador//
-       numdepositos = numdepositos +1;//contador//
+        //voy al banco
+        respuesta = "s"
+        printf("\n\n monto a depositar: ");
+        scanf("%d",&monto);
+        banco= banco + monto; //acumulador
+        numdepositos= numdepositos + 1; //contador
 
-       printf("¿quieres realizar otro deposito? (s/n)?");
-       scanf("%c,&respuesta")
+        printf("¿Quieres realizar otro deposito (s/n)");
+        scanf("%c", &respuesta);
 
-    } while (respuesta "s");// condition while = mientras //
-
-    printf("\n\n dinero que tienes en el banco &f, banco");
-    printf("\n\n numero de depositos &d, numdepositos");
+    } while( respuesta = 's' ); //condition While = mientras
+    
+    printf("Dinero que tienes en el banco %d ", banco);
+    printf("numero de depositos %d ", numdepositos);
     return 0;
-]
+
+}
